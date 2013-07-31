@@ -14,7 +14,7 @@ function wetkit_pages_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_wetkit_page';
-  $strongarm->value = 'edit-menu';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_wetkit_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -99,7 +99,7 @@ function wetkit_pages_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'language_content_type_wetkit_page';
-  $strongarm->value = '2';
+  $strongarm->value = '4';
   $export['language_content_type_wetkit_page'] = $strongarm;
 
   $strongarm = new stdClass();
