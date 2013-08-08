@@ -161,13 +161,13 @@ function wetkit_pages_panelizer_defaults() {
     $pane->pid = 'new-1e8f1d86-53ac-9374-ed5b-feb81a0403c5';
     $pane->panel = 'pearson_second';
     $pane->type = 'menu_tree';
-    $pane->subtype = 'wetkit-menu-minipanel';
+    $pane->subtype = 'sidebar';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'menu_name' => 'wetkit-menu-minipanel',
+      'menu_name' => 'sidebar',
       'parent_mlid' => 0,
-      'parent' => 'wetkit-menu-minipanel:0',
+      'parent' => 'sidebar:0',
       'title_link' => 0,
       'admin_title' => '',
       'level' => '1',
