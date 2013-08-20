@@ -305,10 +305,10 @@ function wetkit_pages_panelizer_defaults() {
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
-        'image_style' => 'panopoly_image_half',
+        'image_style' => 'wetkit_image_half',
         'image_link' => '',
-        'image_style_destination' => 'panopoly_image_half',
-        'image_style_source' => 'panopoly_image_half',
+        'image_style_destination' => 'wetkit_image_half',
+        'image_style_source' => 'wetkit_image_half',
         'custom_class' => '',
       ),
       'context' => 'panelizer',
@@ -480,7 +480,7 @@ function wetkit_pages_panelizer_defaults() {
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
         'image_link' => 'content',
-        'image_style' => 'panopoly_image_half',
+        'image_style' => 'wetkit_image_half',
       ),
       'context' => 'panelizer',
       'override_title' => 0,
@@ -633,7 +633,7 @@ function wetkit_pages_panelizer_defaults() {
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
         'image_link' => 'content',
-        'image_style' => 'panopoly_image_quarter',
+        'image_style' => 'wetkit_image_quarter',
       ),
       'context' => 'panelizer',
       'override_title' => 1,

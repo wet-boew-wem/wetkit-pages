@@ -198,7 +198,7 @@ function wetkit_pages_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'panopoly_image_half',
+          'image_style' => 'wetkit_image_half',
         ),
         'type' => 'image',
         'weight' => 1,
@@ -208,7 +208,7 @@ function wetkit_pages_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => 'content',
-          'image_style' => 'panopoly_image_half',
+          'image_style' => 'wetkit_image_half',
         ),
         'type' => 'image',
         'weight' => 0,
@@ -224,7 +224,7 @@ function wetkit_pages_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => 'content',
-          'image_style' => 'panopoly_image_quarter',
+          'image_style' => 'wetkit_image_quarter',
         ),
         'type' => 'image',
         'weight' => 0,
@@ -234,7 +234,7 @@ function wetkit_pages_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => 'content',
-          'image_style' => 'panopoly_image_quarter',
+          'image_style' => 'wetkit_image_quarter',
         ),
         'type' => 'image',
         'weight' => 0,
@@ -260,7 +260,7 @@ function wetkit_pages_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
-        'preview_image_style' => 'panopoly_image_full',
+        'preview_image_style' => 'wetkit_image_full',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
