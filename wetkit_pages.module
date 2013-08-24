@@ -200,8 +200,8 @@ function wetkit_pages_modules_enabled($modules) {
   if (variable_get('install_task', 'done') != 'done') {
 
     // Rebuild some caches so this all works right.
-    features_flush_caches();
-    drupal_static_reset();
+    //features_flush_caches();
+    //drupal_static_reset();
 
     // Define some permissions for the editor role.
     if ($editor = user_role_load_by_name('editor')) {
