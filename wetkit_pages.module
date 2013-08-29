@@ -198,6 +198,7 @@ function wetkit_pages_module_implements_alter(&$implementations, $hook) {
 function wetkit_pages_modules_enabled($modules) {
   // Only run this logic if we are executing as part of an install profile
   // And only for this particular module.
+  // TODO.
   /*
   if (drupal_installation_attempted() && in_array('wetkit_pages', $modules)) {
 
