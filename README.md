@@ -1,6 +1,6 @@
 WetKit Pages
 ============
-Helps create and manage pages that can be Panelized for Drupal WEM.
+Helps create and manage pages that can be Panelized for Drupal WxT.
 
 Key Features
 * Creation of a Basic Page content type for basic page management
