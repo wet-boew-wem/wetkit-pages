@@ -19,7 +19,7 @@ function wetkit_pages_default_page_manager_handlers() {
   $handler->handler = 'panel_context';
   $handler->weight = -1;
   $handler->conf = array(
-    'title' => 'WetKit Node add/edit form',
+    'title' => 'Basic Page',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'css_id' => 'node-edit',
