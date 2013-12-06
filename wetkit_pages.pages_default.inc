@@ -388,5 +388,186 @@ function wetkit_pages_default_page_manager_handlers() {
   $handler->conf['display'] = $display;
   $export['node_edit_panel_context_2'] = $handler;
 
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'node_view_panel_context_3';
+  $handler->task = 'node_view';
+  $handler->subtask = '';
+  $handler->handler = 'panel_context';
+  $handler->weight = -30;
+  $handler->conf = array(
+    'title' => 'Node',
+    'no_blocks' => 0,
+    'pipeline' => 'ipe',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => '',
+    'css_id' => 'page-page',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'logic' => 'and',
+      'plugins' => array(),
+    ),
+  );
+  $display = new panels_display();
+  $display->layout = 'pearson';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'pearson_top' => NULL,
+      'pearson_first' => NULL,
+      'pearson_second' => NULL,
+      'pearson_third' => NULL,
+      'pearson_bottom' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '4286442d-61e8-8974-c145-399811c5794b';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-e4ef5c53-ce91-4ea4-cd0b-fecf62de32cd';
+    $pane->panel = 'pearson_first';
+    $pane->type = 'page_title';
+    $pane->subtype = 'page_title';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'markup' => 'h1',
+      'class' => '',
+      'id' => 'wb-cont',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'e4ef5c53-ce91-4ea4-cd0b-fecf62de32cd';
+    $display->content['new-e4ef5c53-ce91-4ea4-cd0b-fecf62de32cd'] = $pane;
+    $display->panels['pearson_first'][0] = 'new-e4ef5c53-ce91-4ea4-cd0b-fecf62de32cd';
+    $pane = new stdClass();
+    $pane->pid = 'new-6c1a548a-cc6a-5004-51f6-a92b7785bde7';
+    $pane->panel = 'pearson_first';
+    $pane->type = 'page_tabs';
+    $pane->subtype = 'page_tabs';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'type' => 'both',
+      'id' => 'tabs',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '6c1a548a-cc6a-5004-51f6-a92b7785bde7';
+    $display->content['new-6c1a548a-cc6a-5004-51f6-a92b7785bde7'] = $pane;
+    $display->panels['pearson_first'][1] = 'new-6c1a548a-cc6a-5004-51f6-a92b7785bde7';
+    $pane = new stdClass();
+    $pane->pid = 'new-1460bc1b-ea01-7f64-21a0-fa85274d6a3d';
+    $pane->panel = 'pearson_first';
+    $pane->type = 'node_content';
+    $pane->subtype = 'node_content';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'links' => 1,
+      'no_extras' => 1,
+      'override_title' => 1,
+      'override_title_text' => '',
+      'identifier' => '',
+      'link' => 0,
+      'leave_node_title' => 0,
+      'build_mode' => 'full',
+      'context' => array(),
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = '1460bc1b-ea01-7f64-21a0-fa85274d6a3d';
+    $display->content['new-1460bc1b-ea01-7f64-21a0-fa85274d6a3d'] = $pane;
+    $display->panels['pearson_first'][2] = 'new-1460bc1b-ea01-7f64-21a0-fa85274d6a3d';
+    $pane = new stdClass();
+    $pane->pid = 'new-fd9f2848-da1e-9d94-51d8-f93ecfb80106';
+    $pane->panel = 'pearson_first';
+    $pane->type = 'node_updated';
+    $pane->subtype = 'node_updated';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'format' => 'short',
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $pane->uuid = 'fd9f2848-da1e-9d94-51d8-f93ecfb80106';
+    $display->content['new-fd9f2848-da1e-9d94-51d8-f93ecfb80106'] = $pane;
+    $display->panels['pearson_first'][3] = 'new-fd9f2848-da1e-9d94-51d8-f93ecfb80106';
+    $pane = new stdClass();
+    $pane->pid = 'new-6e3e36c9-61b2-a8f4-3daa-ded1011baa06';
+    $pane->panel = 'pearson_second';
+    $pane->type = 'menu_tree';
+    $pane->subtype = 'sidebar';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'menu_name' => 'sidebar',
+      'parent_mlid' => 0,
+      'show_menu_items' => array(),
+      'parent' => 'sidebar:0',
+      'title_link' => 0,
+      'admin_title' => '',
+      'level' => '1',
+      'follow' => 0,
+      'depth' => 0,
+      'expanded' => 1,
+      'sort' => 0,
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '6e3e36c9-61b2-a8f4-3daa-ded1011baa06';
+    $display->content['new-6e3e36c9-61b2-a8f4-3daa-ded1011baa06'] = $pane;
+    $display->panels['pearson_second'][0] = 'new-6e3e36c9-61b2-a8f4-3daa-ded1011baa06';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-6e3e36c9-61b2-a8f4-3daa-ded1011baa06';
+  $handler->conf['display'] = $display;
+  $export['node_view_panel_context_3'] = $handler;
+
   return $export;
 }
