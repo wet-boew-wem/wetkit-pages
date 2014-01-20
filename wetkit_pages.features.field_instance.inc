@@ -315,7 +315,7 @@ function wetkit_pages_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_featured_status',
-    'label' => 'Feature content',
+    'label' => 'Featured content',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -443,7 +443,7 @@ function wetkit_pages_field_default_field_instances() {
   t('Archived Content');
   t('Body');
   t('Categories');
-  t('Feature content');
+  t('Featured content');
   t('Primary Image');
   t('Share Widget');
   t('Title');
