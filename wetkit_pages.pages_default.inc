@@ -408,6 +408,31 @@ function wetkit_pages_default_page_manager_handlers() {
     $pane->uuid = 'b4789c8a-2356-2ad4-2d39-3f1722eb448c';
     $display->content['new-b4789c8a-2356-2ad4-2d39-3f1722eb448c'] = $pane;
     $display->panels['sidebar'][5] = 'new-b4789c8a-2356-2ad4-2d39-3f1722eb448c';
+    $pane = new stdClass();
+    $pane->pid = 'new-056c2921-d466-4525-b27d-fc5c7252978c';
+    $pane->panel = 'sidebar';
+    $pane->type = 'entity_form_field';
+    $pane->subtype = 'node:field_share_widget';
+    $pane->shown = FALSE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => '',
+      'formatter' => '',
+      'context' => 'argument_node_edit_1',
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 6;
+    $pane->locks = array();
+    $pane->uuid = '056c2921-d466-4525-b27d-fc5c7252978c';
+    $display->content['new-056c2921-d466-4525-b27d-fc5c7252978c'] = $pane;
+    $display->panels['sidebar'][6] = 'new-056c2921-d466-4525-b27d-fc5c7252978c';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-390b7bd0-1989-7964-7106-2e29ba6076d4';
   $handler->conf['display'] = $display;
@@ -420,7 +445,7 @@ function wetkit_pages_default_page_manager_handlers() {
   $handler->task = 'node_view';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
-  $handler->weight = 100;
+  $handler->weight = 98;
   $handler->conf = array(
     'title' => 'Node',
     'no_blocks' => 0,
@@ -593,6 +618,292 @@ function wetkit_pages_default_page_manager_handlers() {
   $display->title_pane = 'new-6e3e36c9-61b2-a8f4-3daa-ded1011baa06';
   $handler->conf['display'] = $display;
   $export['node_view_panel_context_3'] = $handler;
+
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'node_view_panel_context_4';
+  $handler->task = 'node_view';
+  $handler->subtask = '';
+  $handler->handler = 'panel_context';
+  $handler->weight = 96;
+  $handler->conf = array(
+    'title' => 'Node (WxT)',
+    'no_blocks' => 0,
+    'pipeline' => 'ipe',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => '',
+    'css_id' => 'page-page',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'logic' => 'and',
+      'plugins' => array(
+        0 => array(
+          'name' => 'node_type',
+          'settings' => array(
+            'type' => array(
+              'wetkit_page' => 'wetkit_page',
+            ),
+          ),
+          'context' => 'argument_entity_id:node_1',
+          'not' => FALSE,
+        ),
+      ),
+    ),
+  );
+  $display = new panels_display();
+  $display->layout = 'pearson';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'pearson_top' => NULL,
+      'pearson_first' => NULL,
+      'pearson_second' => NULL,
+      'pearson_third' => NULL,
+      'pearson_bottom' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '4286442d-61e8-8974-c145-399811c5794b';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-e4ef5c53-ce91-4ea4-cd0b-fecf62de32cd';
+    $pane->panel = 'pearson_first';
+    $pane->type = 'page_title';
+    $pane->subtype = 'page_title';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'markup' => 'h1',
+      'class' => '',
+      'id' => 'wb-cont',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'e4ef5c53-ce91-4ea4-cd0b-fecf62de32cd';
+    $display->content['new-e4ef5c53-ce91-4ea4-cd0b-fecf62de32cd'] = $pane;
+    $display->panels['pearson_first'][0] = 'new-e4ef5c53-ce91-4ea4-cd0b-fecf62de32cd';
+    $pane = new stdClass();
+    $pane->pid = 'new-6c1a548a-cc6a-5004-51f6-a92b7785bde7';
+    $pane->panel = 'pearson_first';
+    $pane->type = 'page_tabs';
+    $pane->subtype = 'page_tabs';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'type' => 'both',
+      'id' => 'tabs',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '6c1a548a-cc6a-5004-51f6-a92b7785bde7';
+    $display->content['new-6c1a548a-cc6a-5004-51f6-a92b7785bde7'] = $pane;
+    $display->panels['pearson_first'][1] = 'new-6c1a548a-cc6a-5004-51f6-a92b7785bde7';
+    $pane = new stdClass();
+    $pane->pid = 'new-06f702e1-7dcb-4859-8646-e196e4c81a5d';
+    $pane->panel = 'pearson_first';
+    $pane->type = 'archived_widget';
+    $pane->subtype = 'archived_widget';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => 'argument_entity_id:node_1',
+      'span_item' => 'span-6',
+      'form_build_id' => 'form-xLkW9cJZ71w6g_X2K4LiskkkbULD0eXhQJkexWvx0Ls',
+      'form_token' => 'XFsHblzUTyYAErcjF3uZ-shvhu2EtcziOaPfmRs3W30',
+      'form_id' => 'wetkit_wetboew_archived_widget_edit_form',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = '06f702e1-7dcb-4859-8646-e196e4c81a5d';
+    $display->content['new-06f702e1-7dcb-4859-8646-e196e4c81a5d'] = $pane;
+    $display->panels['pearson_first'][2] = 'new-06f702e1-7dcb-4859-8646-e196e4c81a5d';
+    $pane = new stdClass();
+    $pane->pid = 'new-505f19a8-a0c9-4c36-ab92-711267c3cfa9';
+    $pane->panel = 'pearson_first';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_featured_image';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'title',
+      'formatter' => 'wetkit_widgets_lightbox',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(
+        'file_view_mode' => 'default',
+        'image_link' => '',
+        'picture_group' => 'wxt_responsive_image',
+        'fallback_image_style' => '',
+        'colorbox' => 'wxt_responsive_image',
+        'image_style_destination' => 'wetkit_image_half',
+        'image_style_source' => 'wetkit_image_half',
+        'custom_class' => '',
+      ),
+      'context' => array(),
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $pane->uuid = '505f19a8-a0c9-4c36-ab92-711267c3cfa9';
+    $display->content['new-505f19a8-a0c9-4c36-ab92-711267c3cfa9'] = $pane;
+    $display->panels['pearson_first'][3] = 'new-505f19a8-a0c9-4c36-ab92-711267c3cfa9';
+    $pane = new stdClass();
+    $pane->pid = 'new-d7ae79c9-99c4-4b11-85be-f01600ba49fe';
+    $pane->panel = 'pearson_first';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:body';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'title',
+      'formatter' => 'text_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => array(),
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 4;
+    $pane->locks = array();
+    $pane->uuid = 'd7ae79c9-99c4-4b11-85be-f01600ba49fe';
+    $display->content['new-d7ae79c9-99c4-4b11-85be-f01600ba49fe'] = $pane;
+    $display->panels['pearson_first'][4] = 'new-d7ae79c9-99c4-4b11-85be-f01600ba49fe';
+    $pane = new stdClass();
+    $pane->pid = 'new-6cba6356-6fca-4013-b37f-586ecc43e30a';
+    $pane->panel = 'pearson_first';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_featured_categories';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'title',
+      'formatter' => 'taxonomy_term_reference_link',
+      'delta_limit' => '0',
+      'delta_offset' => '0',
+      'delta_reversed' => 0,
+      'formatter_settings' => array(),
+      'context' => array(),
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 5;
+    $pane->locks = array();
+    $pane->uuid = '6cba6356-6fca-4013-b37f-586ecc43e30a';
+    $display->content['new-6cba6356-6fca-4013-b37f-586ecc43e30a'] = $pane;
+    $display->panels['pearson_first'][5] = 'new-6cba6356-6fca-4013-b37f-586ecc43e30a';
+    $pane = new stdClass();
+    $pane->pid = 'new-fd9f2848-da1e-9d94-51d8-f93ecfb80106';
+    $pane->panel = 'pearson_first';
+    $pane->type = 'node_updated';
+    $pane->subtype = 'node_updated';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'format' => 'short',
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 6;
+    $pane->locks = array();
+    $pane->uuid = 'fd9f2848-da1e-9d94-51d8-f93ecfb80106';
+    $display->content['new-fd9f2848-da1e-9d94-51d8-f93ecfb80106'] = $pane;
+    $display->panels['pearson_first'][6] = 'new-fd9f2848-da1e-9d94-51d8-f93ecfb80106';
+    $pane = new stdClass();
+    $pane->pid = 'new-6e3e36c9-61b2-a8f4-3daa-ded1011baa06';
+    $pane->panel = 'pearson_second';
+    $pane->type = 'menu_tree';
+    $pane->subtype = 'sidebar';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'menu_name' => 'sidebar',
+      'parent_mlid' => 0,
+      'show_menu_items' => array(),
+      'parent' => 'sidebar:0',
+      'title_link' => 0,
+      'admin_title' => '',
+      'level' => '1',
+      'follow' => 0,
+      'depth' => 0,
+      'expanded' => 1,
+      'sort' => 0,
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '6e3e36c9-61b2-a8f4-3daa-ded1011baa06';
+    $display->content['new-6e3e36c9-61b2-a8f4-3daa-ded1011baa06'] = $pane;
+    $display->panels['pearson_second'][0] = 'new-6e3e36c9-61b2-a8f4-3daa-ded1011baa06';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-6e3e36c9-61b2-a8f4-3daa-ded1011baa06';
+  $handler->conf['display'] = $display;
+  $export['node_view_panel_context_4'] = $handler;
 
   return $export;
 }

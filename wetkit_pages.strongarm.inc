@@ -14,7 +14,7 @@ function wetkit_pages_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_wetkit_page';
-  $strongarm->value = 'edit-workflow';
+  $strongarm->value = 'edit-panelizer';
   $export['additional_settings__active_tab_wetkit_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -148,7 +148,7 @@ function wetkit_pages_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_defaults_node_wetkit_page';
   $strongarm->value = array(
-    'status' => 1,
+    'status' => 0,
     'view modes' => array(
       'page_manager' => array(
         'status' => 1,

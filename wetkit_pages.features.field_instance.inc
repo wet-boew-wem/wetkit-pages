@@ -332,57 +332,6 @@ function wetkit_pages_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-wetkit_page-field_share_widget'
-  $field_instances['node-wetkit_page-field_share_widget'] = array(
-    'bundle' => 'wetkit_page',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 5,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'search_result' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'fences_wrapper' => 'div',
-    'field_name' => 'field_share_widget',
-    'label' => 'Share Widget',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 7,
-    ),
-  );
-
   // Exported field_instance: 'node-wetkit_page-title_field'
   $field_instances['node-wetkit_page-title_field'] = array(
     'bundle' => 'wetkit_page',
@@ -445,7 +394,6 @@ function wetkit_pages_field_default_field_instances() {
   t('Categories');
   t('Featured content');
   t('Primary Image');
-  t('Share Widget');
   t('Title');
 
   return $field_instances;
