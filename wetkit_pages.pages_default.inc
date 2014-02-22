@@ -78,7 +78,17 @@ function wetkit_pages_default_page_manager_handlers() {
     $pane->type = 'page_tabs';
     $pane->subtype = 'page_tabs';
     $pane->shown = TRUE;
-    $pane->access = array();
+    $pane->access = array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'theme',
+          'settings' => array(
+            'theme' => 'wetkit_omega',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+    );
     $pane->configuration = array(
       'type' => 'both',
       'id' => 'tabs',
@@ -408,31 +418,6 @@ function wetkit_pages_default_page_manager_handlers() {
     $pane->uuid = 'b4789c8a-2356-2ad4-2d39-3f1722eb448c';
     $display->content['new-b4789c8a-2356-2ad4-2d39-3f1722eb448c'] = $pane;
     $display->panels['sidebar'][5] = 'new-b4789c8a-2356-2ad4-2d39-3f1722eb448c';
-    $pane = new stdClass();
-    $pane->pid = 'new-056c2921-d466-4525-b27d-fc5c7252978c';
-    $pane->panel = 'sidebar';
-    $pane->type = 'entity_form_field';
-    $pane->subtype = 'node:field_share_widget';
-    $pane->shown = FALSE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => '',
-      'formatter' => '',
-      'context' => 'argument_node_edit_1',
-      'override_title' => 1,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 6;
-    $pane->locks = array();
-    $pane->uuid = '056c2921-d466-4525-b27d-fc5c7252978c';
-    $display->content['new-056c2921-d466-4525-b27d-fc5c7252978c'] = $pane;
-    $display->panels['sidebar'][6] = 'new-056c2921-d466-4525-b27d-fc5c7252978c';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-390b7bd0-1989-7964-7106-2e29ba6076d4';
   $handler->conf['display'] = $display;

@@ -1,5 +1,5 @@
 name = WetKit Pages
-description = Provides a basic page, suitable for Panelizing.
+description = Provides a basic page, suitable for Panels Layouts.
 core = 7.x
 package = WetKit
 dependencies[] = ctools
