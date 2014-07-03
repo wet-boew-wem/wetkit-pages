@@ -650,6 +650,9 @@ function wetkit_pages_default_page_manager_handlers() {
       'pearson_third' => NULL,
       'pearson_bottom' => NULL,
     ),
+    'pearson_first' => array(
+      'style' => '0',
+    ),
   );
   $display->cache = array();
   $display->title = '';
@@ -829,18 +832,13 @@ function wetkit_pages_default_page_manager_handlers() {
     $display->content['new-6cba6356-6fca-4013-b37f-586ecc43e30a'] = $pane;
     $display->panels['pearson_first'][5] = 'new-6cba6356-6fca-4013-b37f-586ecc43e30a';
     $pane = new stdClass();
-    $pane->pid = 'new-fd9f2848-da1e-9d94-51d8-f93ecfb80106';
+    $pane->pid = 'new-ddb8bcf4-4eb0-4c2d-99bb-5a361a034cc1';
     $pane->panel = 'pearson_first';
-    $pane->type = 'node_updated';
-    $pane->subtype = 'node_updated';
+    $pane->type = 'date_modified';
+    $pane->subtype = 'date_modified';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array(
-      'format' => 'short',
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 1,
-      'override_title_text' => '',
-    );
+    $pane->configuration = array();
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
@@ -849,9 +847,9 @@ function wetkit_pages_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 6;
     $pane->locks = array();
-    $pane->uuid = 'fd9f2848-da1e-9d94-51d8-f93ecfb80106';
-    $display->content['new-fd9f2848-da1e-9d94-51d8-f93ecfb80106'] = $pane;
-    $display->panels['pearson_first'][6] = 'new-fd9f2848-da1e-9d94-51d8-f93ecfb80106';
+    $pane->uuid = 'ddb8bcf4-4eb0-4c2d-99bb-5a361a034cc1';
+    $display->content['new-ddb8bcf4-4eb0-4c2d-99bb-5a361a034cc1'] = $pane;
+    $display->panels['pearson_first'][6] = 'new-ddb8bcf4-4eb0-4c2d-99bb-5a361a034cc1';
     $pane = new stdClass();
     $pane->pid = 'new-6e3e36c9-61b2-a8f4-3daa-ded1011baa06';
     $pane->panel = 'pearson_second';
@@ -868,11 +866,13 @@ function wetkit_pages_default_page_manager_handlers() {
       'admin_title' => '',
       'level' => '1',
       'follow' => 0,
-      'depth' => 0,
+      'depth' => '0',
       'expanded' => 1,
       'sort' => 0,
       'override_title' => 1,
       'override_title_text' => '',
+      'title_embed' => 0,
+      'theme' => 'menu_link__menu_block__wxt_sidebar',
     );
     $pane->cache = array();
     $pane->style = array(
