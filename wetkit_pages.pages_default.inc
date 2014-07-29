@@ -582,11 +582,13 @@ function wetkit_pages_default_page_manager_handlers() {
       'admin_title' => '',
       'level' => '1',
       'follow' => 0,
-      'depth' => 0,
+      'depth' => '0',
       'expanded' => 1,
       'sort' => 0,
       'override_title' => 1,
       'override_title_text' => '',
+      'title_embed' => 0,
+      'theme' => 'menu_link__menu_block__wxt_sidebar',
     );
     $pane->cache = array();
     $pane->style = array(
