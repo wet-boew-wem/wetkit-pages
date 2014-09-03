@@ -83,7 +83,7 @@ function wetkit_pages_default_page_manager_handlers() {
         0 => array(
           'name' => 'theme',
           'settings' => array(
-            'theme' => 'wetkit_pages',
+            'theme' => 'wetkit_bootstrap',
           ),
           'not' => FALSE,
         ),
