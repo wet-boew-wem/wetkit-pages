@@ -79,15 +79,7 @@ function wetkit_pages_default_page_manager_handlers() {
     $pane->subtype = 'page_tabs';
     $pane->shown = TRUE;
     $pane->access = array(
-      'plugins' => array(
-        0 => array(
-          'name' => 'theme',
-          'settings' => array(
-            'theme' => 'wetkit_bootstrap',
-          ),
-          'not' => FALSE,
-        ),
-      ),
+      'plugins' => array(),
     );
     $pane->configuration = array(
       'type' => 'both',
