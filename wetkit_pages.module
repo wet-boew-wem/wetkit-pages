@@ -172,7 +172,7 @@ function wetkit_pages_landing_page_wizard_submit($form, &$form_state) {
   $form_state['redirect'] = $form_state['wizard cache']->path;
 
   // Show a message informing the user about the new layout.
-  drupal_set_message(t('A new panels page has been created'));
+  drupal_set_message(t('A new panels page using the @layout_name layout has been created', array('@layout_name' => $form_state['values']['layout'])));
 }
 
 /**
