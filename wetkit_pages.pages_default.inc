@@ -45,6 +45,8 @@ function wetkit_pages_default_page_manager_handlers() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = 'e721f600-7c2f-9fd4-dd0a-eee48ee14010';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'node_edit_panel_context_2';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -454,6 +456,8 @@ function wetkit_pages_default_page_manager_handlers() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = '4286442d-61e8-8974-c145-399811c5794b';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'node_view_panel_context_3';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -651,6 +655,8 @@ function wetkit_pages_default_page_manager_handlers() {
   $display->cache = array();
   $display->title = '';
   $display->uuid = '4286442d-61e8-8974-c145-399811c5794b';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'node_view_panel_context_4';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();

@@ -10,7 +10,7 @@
 function wetkit_pages_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-wetkit_page-body'
+  // Exported field_instance: 'node-wetkit_page-body'.
   $field_instances['node-wetkit_page-body'] = array(
     'bundle' => 'wetkit_page',
     'default_value' => NULL,
@@ -80,7 +80,7 @@ function wetkit_pages_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-wetkit_page-field_archived_content'
+  // Exported field_instance: 'node-wetkit_page-field_archived_content'.
   $field_instances['node-wetkit_page-field_archived_content'] = array(
     'bundle' => 'wetkit_page',
     'default_value' => array(
@@ -137,7 +137,7 @@ function wetkit_pages_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-wetkit_page-field_featured_categories'
+  // Exported field_instance: 'node-wetkit_page-field_featured_categories'.
   $field_instances['node-wetkit_page-field_featured_categories'] = array(
     'bundle' => 'wetkit_page',
     'default_value' => NULL,
@@ -187,7 +187,7 @@ function wetkit_pages_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-wetkit_page-field_featured_image'
+  // Exported field_instance: 'node-wetkit_page-field_featured_image'.
   $field_instances['node-wetkit_page-field_featured_image'] = array(
     'bundle' => 'wetkit_page',
     'deleted' => 0,
@@ -276,7 +276,7 @@ function wetkit_pages_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-wetkit_page-field_featured_status'
+  // Exported field_instance: 'node-wetkit_page-field_featured_status'.
   $field_instances['node-wetkit_page-field_featured_status'] = array(
     'bundle' => 'wetkit_page',
     'default_value' => array(
@@ -332,7 +332,7 @@ function wetkit_pages_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-wetkit_page-title_field'
+  // Exported field_instance: 'node-wetkit_page-title_field'.
   $field_instances['node-wetkit_page-title_field'] = array(
     'bundle' => 'wetkit_page',
     'default_value' => NULL,
